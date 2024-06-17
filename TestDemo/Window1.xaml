@@ -1,0 +1,23 @@
+﻿<Window x:Class="TestDemo.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestDemo"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Label Name="qwe" Margin="0,0,-0.4,389">123</Label>
+        <DataGrid Margin="0,31,-0.4,100" Name="DataGrid1" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding id}" Width="*" Header="id"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding ФИО}" Width="*" Header="ФИО"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Login}" Width="*" Header="Login"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Margin="0,325,-0.4,0">
+            <Button Content="321" Name="btn_321"/>
+            <Button Content="123" Name="btn_123"/>
+        </StackPanel>
+    </Grid>
+</Window>
